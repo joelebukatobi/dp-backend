@@ -69,15 +69,16 @@
     "twitter": {
       "type": "string"
     },
-    "photo": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "blogs": {
       "type": "relation",
