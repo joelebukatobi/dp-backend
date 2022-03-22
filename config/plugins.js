@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  // ...
+  // Cloudinary Upload
   upload: {
     config: {
       provider: "cloudinary",
@@ -14,5 +14,17 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // ...
+  // Sendgrid Emails
+  email: {
+    config: {
+      provider: "sendgrid",
+      providerOptions: {
+        apiKey: env("SENDGRID_API_KEY"),
+      },
+      settings: {
+        defaultFrom: "joelebuka@gmail.com",
+        defaultReplyTo: "joelebuka@gmail.com",
+      },
+    },
+  },
 });
