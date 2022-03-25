@@ -69,6 +69,12 @@
     "twitter": {
       "type": "string"
     },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "user"
+    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -79,12 +85,6 @@
         "videos",
         "audios"
       ]
-    },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog",
-      "mappedBy": "user"
     }
   }
 }

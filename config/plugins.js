@@ -14,6 +14,9 @@ module.exports = ({ env }) => ({
       },
     },
   },
+});
+
+module.exports = ({ env }) => ({
   // Sendgrid Emails
   email: {
     config: {
